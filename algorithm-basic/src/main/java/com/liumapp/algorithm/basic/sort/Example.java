@@ -18,21 +18,23 @@ import java.io.InputStreamReader;
  */
 public class Example {
 
-    public static void sort (Comparable[] a) {
-
+    public static Comparable[] sort (Comparable[] a) {
+        Comparable[] result = new Comparable[a.length];
+        return result;
     }
 
     public static boolean less (Comparable v, Comparable w) {
         return v.compareTo(w) < 0 ;
     }
 
-    public static void exch (Comparable[] a, int i , int j) {
+    public static Comparable[] exch (Comparable[] a, int i , int j) {
         Comparable t = a[i];
         a[i] = a[j];
         a[j] = t;
+        return a;
     }
 
-    private static void show (Comparable[] a) {
+    public static void show (Comparable[] a) {
         for (int i = 0; i < a.length; i++) {
             System.out.println(a[i] + " ");
         }
