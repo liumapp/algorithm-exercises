@@ -25,13 +25,6 @@ public class SelectionSorting extends Example {
         return a;
     }
 
-    public static Integer[] toInteger (String[] a) {
-        Integer[] result = new Integer[a.length];
-        for (int i = 0; i < a.length; i++) {
-            result[i] = Integer.parseInt(a[i]);
-        }
-        return result;
-    }
 
     public static void main (String[] args) throws IOException {
         BufferedReader buff = new BufferedReader(new InputStreamReader(System.in));
