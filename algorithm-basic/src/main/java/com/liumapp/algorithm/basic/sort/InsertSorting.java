@@ -18,6 +18,7 @@ public class InsertSorting extends Example {
         for (int i = 1; i < N; i++) {
             for (int j = i; j > 0 &&  less(a[j], a[j - 1]); j--) {
                 a = exch(a, j, j-1);
+                showInLine(a);
             }
         }
         return a;
@@ -30,7 +31,6 @@ public class InsertSorting extends Example {
         String[] a = in.split("\\s+");
         Integer[] b = (Integer[]) sort(toInteger(a));
         assert isSorted(a);
-        show(b);
     }
 
 }

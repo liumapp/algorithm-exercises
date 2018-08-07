@@ -19,12 +19,12 @@ public class SelectionSorting extends Example {
             for (int j = i+1; j < N; j++) {
                 if (less(a[j], a[i])) {
                     a = exch(a, i, j);
+                    show(a);
                 }
             }
         }
         return a;
     }
-
 
     public static void main (String[] args) throws IOException {
         BufferedReader buff = new BufferedReader(new InputStreamReader(System.in));
@@ -33,7 +33,6 @@ public class SelectionSorting extends Example {
         String[] a = in.split("\\s+");
         Integer[] b = (Integer[]) sort(toInteger(a));
         assert isSorted(a);
-        show(b);
     }
 
 }
