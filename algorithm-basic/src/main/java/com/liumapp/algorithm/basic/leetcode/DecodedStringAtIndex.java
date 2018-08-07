@@ -1,5 +1,9 @@
 package com.liumapp.algorithm.basic.leetcode;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 /**
  *
  An encoded string S is given.  To find and write the decoded string to a tape, the encoded string is read one character at a time and the following steps are taken:
@@ -80,7 +84,17 @@ public class DecodedStringAtIndex {
     }
 
     public static void main (String[] args) {
-        
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        DecodedStringAtIndex decodedStringAtIndex = new DecodedStringAtIndex();
+        try {
+            System.out.println("plz enter S :");
+            String S = br.readLine();
+            System.out.println("plz enter K :");
+            int K = Integer.parseInt(br.readLine());
+            System.out.println(decodedStringAtIndex.decodedStringAtIndex(S, K));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
 }
