@@ -63,7 +63,7 @@ public class DecodedStringAtIndex {
         for (int i = 0; i < N; ++i) {
             char c = S.charAt(i);
             if (Character.isDigit(c))
-                size *= c - '0';
+                size *= c - '0'; // - '0' convert char to int
             else
                 size++;
         }
