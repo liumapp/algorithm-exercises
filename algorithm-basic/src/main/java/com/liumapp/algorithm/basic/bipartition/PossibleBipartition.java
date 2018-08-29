@@ -50,7 +50,9 @@ public class PossibleBipartition {
     There does not exist i != j for which dislikes[i] == dislikes[j].
 */
 
-
+    public static void main (String[] args) {
+        
+    }
 
 
 
