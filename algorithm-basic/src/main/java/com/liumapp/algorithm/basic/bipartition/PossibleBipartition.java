@@ -1,5 +1,9 @@
 package com.liumapp.algorithm.basic.bipartition;
 
+import org.apache.commons.cli.*;
+
+import java.util.Scanner;
+
 /**
  * file PossibleBipartition.java
  * author liumapp
@@ -50,8 +54,18 @@ public class PossibleBipartition {
     There does not exist i != j for which dislikes[i] == dislikes[j].
 */
 
-    public static void main (String[] args) {
-        
+    public boolean possibleBipartition(int N, int[][] dislikes) {
+        return false;
+    }
+
+    public static void main (String[] args) throws ParseException {
+        PossibleBipartition possibleBipartition = new PossibleBipartition();
+        System.out.println("plz enter how many people : ");
+        Scanner scanner = new Scanner(System.in);
+        Integer N = scanner.nextInt();
+
+
+
     }
 
 
